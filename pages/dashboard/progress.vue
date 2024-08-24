@@ -9,7 +9,7 @@
       <!-- Progress Overview -->
       <div>
         <div v-if="coursesProgress.length">
-          <ul class="space-y-8">
+          <ul class="list-none space-y-8">
             <li v-for="course in coursesProgress" :key="course.id" class="border rounded-lg shadow-lg p-6">
               <h2 class="text-xl font-semibold mb-4">{{ course.title }}</h2>
               <p class="text-gray-600 mb-4">{{ course.description }}</p>
@@ -19,9 +19,9 @@
                 </div>
                 <p class="absolute top-1/2 right-0 transform -translate-y-1/2 text-sm text-gray-600">{{ course.progress }}%</p>
               </div>
-              <router-link :to="`/courses/${course.id}`" class="text-blue-600 hover:underline mt-4 block">
+              <NuxtLink :to="`/courses/${course.id}`" class="text-blue-600 hover:underline mt-4 block">
                 View Course Details
-              </router-link>
+              </NuxtLink>
             </li>
           </ul>
         </div>

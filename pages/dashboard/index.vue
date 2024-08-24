@@ -34,7 +34,9 @@
       <div class="mb-12">
         <h2 class="text-2xl font-semibold mb-6">Enrolled Courses</h2>
         <div v-if="enrolledCourses.length">
-          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ul
+            class="list-none grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
             <li
               v-for="course in enrolledCourses"
               :key="course.id"
@@ -42,20 +44,20 @@
             >
               <h3 class="text-xl font-semibold mb-4">{{ course?.title }}</h3>
               <p class="text-gray-600 mb-4">{{ course?.description }}</p>
-              <router-link
+              <NuxtLink
                 :to="`/courses/${course.id}`"
                 class="text-blue-600 hover:underline"
               >
                 Continue Learning
-              </router-link>
+              </NuxtLink>
             </li>
           </ul>
         </div>
         <div v-else>
           <p>
             You are not enrolled in any courses yet. Browse our
-            <router-link to="/courses" class="text-blue-600 hover:underline"
-              >course catalog</router-link
+            <NuxtLink to="/courses" class="text-blue-600 hover:underline"
+              >course catalog</NuxtLink
             >
             to find something interesting.
           </p>

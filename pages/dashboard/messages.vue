@@ -12,7 +12,7 @@
       <!-- Messages List -->
       <div>
         <div v-if="messages.length">
-          <ul class="space-y-4">
+          <ul class="list-none space-y-4">
             <li
               v-for="message in messages"
               :key="message.id"
