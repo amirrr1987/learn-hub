@@ -8,9 +8,7 @@
 
       <!-- Navbar Links -->
       <div class="hidden md:flex space-x-4">
-        <NuxtLink
-          to="/"
-          class="text-white hover:bg-gray-700 px-3 py-2 rounded"
+        <NuxtLink to="/" class="text-white hover:bg-gray-700 px-3 py-2 rounded"
           >Home</NuxtLink
         >
         <NuxtLink
@@ -85,15 +83,9 @@
     <div v-show="isMenuOpen" class="md:hidden bg-gray-800 text-white py-2">
       <NuxtLink to="/" class="block px-4 py-2">Home</NuxtLink>
       <NuxtLink to="/courses" class="block px-4 py-2">Courses</NuxtLink>
-      <NuxtLink to="/categories" class="block px-4 py-2"
-        >Categories</NuxtLink
-      >
-      <NuxtLink to="/instructors" class="block px-4 py-2"
-        >Instructors</NuxtLink
-      >
-      <NuxtLink to="/dashboard" class="block px-4 py-2"
-        >Dashboard</NuxtLink
-      >
+      <NuxtLink to="/categories" class="block px-4 py-2">Categories</NuxtLink>
+      <NuxtLink to="/instructors" class="block px-4 py-2">Instructors</NuxtLink>
+      <NuxtLink to="/dashboard" class="block px-4 py-2">Dashboard</NuxtLink>
       <NuxtLink to="/search" class="block px-4 py-2">Search</NuxtLink>
       <NuxtLink to="/contact" class="block px-4 py-2">Contact</NuxtLink>
       <NuxtLink to="/about" class="block px-4 py-2">About</NuxtLink>
