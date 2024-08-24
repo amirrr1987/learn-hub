@@ -3,60 +3,60 @@
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo or Brand Name -->
       <div class="text-white text-2xl font-bold">
-        <router-link to="/">MyLearning</router-link>
+        <NuxtLink to="/">MyLearning</NuxtLink>
       </div>
 
       <!-- Navbar Links -->
       <div class="hidden md:flex space-x-4">
-        <router-link
+        <NuxtLink
           to="/"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Home</router-link
+          >Home</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/courses"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Courses</router-link
+          >Courses</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/categories"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Categories</router-link
+          >Categories</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/instructors"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Instructors</router-link
+          >Instructors</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/dashboard"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Dashboard</router-link
+          >Dashboard</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/search"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Search</router-link
+          >Search</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/contact"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Contact</router-link
+          >Contact</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/about"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >About</router-link
+          >About</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/faq"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >FAQ</router-link
+          >FAQ</NuxtLink
         >
-        <router-link
+        <NuxtLink
           to="/auth/login"
           class="text-white hover:bg-gray-700 px-3 py-2 rounded"
-          >Login</router-link
+          >Login</NuxtLink
         >
       </div>
 
@@ -83,22 +83,22 @@
 
     <!-- Mobile Menu -->
     <div v-show="isMenuOpen" class="md:hidden bg-gray-800 text-white py-2">
-      <router-link to="/" class="block px-4 py-2">Home</router-link>
-      <router-link to="/courses" class="block px-4 py-2">Courses</router-link>
-      <router-link to="/categories" class="block px-4 py-2"
-        >Categories</router-link
+      <NuxtLink to="/" class="block px-4 py-2">Home</NuxtLink>
+      <NuxtLink to="/courses" class="block px-4 py-2">Courses</NuxtLink>
+      <NuxtLink to="/categories" class="block px-4 py-2"
+        >Categories</NuxtLink
       >
-      <router-link to="/instructors" class="block px-4 py-2"
-        >Instructors</router-link
+      <NuxtLink to="/instructors" class="block px-4 py-2"
+        >Instructors</NuxtLink
       >
-      <router-link to="/dashboard" class="block px-4 py-2"
-        >Dashboard</router-link
+      <NuxtLink to="/dashboard" class="block px-4 py-2"
+        >Dashboard</NuxtLink
       >
-      <router-link to="/search" class="block px-4 py-2">Search</router-link>
-      <router-link to="/contact" class="block px-4 py-2">Contact</router-link>
-      <router-link to="/about" class="block px-4 py-2">About</router-link>
-      <router-link to="/faq" class="block px-4 py-2">FAQ</router-link>
-      <router-link to="/login" class="block px-4 py-2">Login</router-link>
+      <NuxtLink to="/search" class="block px-4 py-2">Search</NuxtLink>
+      <NuxtLink to="/contact" class="block px-4 py-2">Contact</NuxtLink>
+      <NuxtLink to="/about" class="block px-4 py-2">About</NuxtLink>
+      <NuxtLink to="/faq" class="block px-4 py-2">FAQ</NuxtLink>
+      <NuxtLink to="/login" class="block px-4 py-2">Login</NuxtLink>
     </div>
   </nav>
 </template>
