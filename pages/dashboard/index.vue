@@ -89,7 +89,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-
+definePageMeta({
+  layout: "dashboard",
+});
 interface Course {
   id: number;
   title: string;

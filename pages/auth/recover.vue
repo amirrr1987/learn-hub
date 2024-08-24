@@ -19,8 +19,8 @@
       Send Recovery Email
     </button>
     <div class="mt-4 text-center">
-      <router-link to="/auth/login" class="text-blue-600 hover:text-blue-800"
-        >Remembered your password? Login</router-link
+      <NuxtLink to="/auth/login" class="text-blue-600 hover:text-blue-800"
+        >Remembered your password? Login</NuxtLink
       >
     </div>
   </form>

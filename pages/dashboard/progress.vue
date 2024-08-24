@@ -35,7 +35,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-
+definePageMeta({
+  layout: "dashboard",
+});
 interface CourseProgress {
   id: number;
   title: string;

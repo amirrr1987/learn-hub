@@ -41,8 +41,8 @@
       Register
     </button>
     <div class="mt-4 text-center">
-      <router-link to="/auth/login" class="text-blue-600 hover:text-blue-800"
-        >Already have an account? Login</router-link
+      <NuxtLink to="/auth/login" class="text-blue-600 hover:text-blue-800"
+        >Already have an account? Login</NuxtLink
       >
     </div>
   </form>

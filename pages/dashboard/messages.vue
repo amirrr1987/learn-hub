@@ -43,7 +43,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-
+definePageMeta({
+  layout: "dashboard",
+});
 interface Message {
   id: number;
   title: string;

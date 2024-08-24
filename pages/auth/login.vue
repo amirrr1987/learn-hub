@@ -30,11 +30,11 @@
       Login
     </button>
     <div class="mt-4 text-center flex flex-col gap-y-4">
-      <router-link to="/auth/recover" class="text-blue-600 hover:text-blue-800"
-        >Forgot password?</router-link
+      <NuxtLink to="/auth/recover" class="text-blue-600 hover:text-blue-800"
+        >Forgot password?</NuxtLink
       >
-      <router-link to="/auth/register" class="text-blue-600 hover:text-blue-800"
-        >haven`t an account? Register</router-link
+      <NuxtLink to="/auth/register" class="text-blue-600 hover:text-blue-800"
+        >haven`t an account? Register</NuxtLink
       >
     </div>
   </form>
